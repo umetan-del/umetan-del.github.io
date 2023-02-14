@@ -1,0 +1,76 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ここからCSSを書いていきましょう */
+/* コンテナの中身から作る*/
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+/* hi,pについてそれぞれ文字の大きさ、透明度、文字の間隔を整える*/
+.top-wrapper h1 {
+  font-size: 45px;
+  opacity: 0.7;
+  letter-spacing: 5px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+/* btnについて体裁を整える。プラスbtn:hoverの設定を行う*/
+.btn:hover {
+  opacity:1;
+}
+
+/* btnについてpadding,color,display,opacity,border-radiusの設定を行う*/
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+/*signupについてbackground-color,margin-top,margin-bottomの設定を行う*/
+.signup {
+  background-color: #239b76;
+  margin: 15px 0;
+}
+
+/* フェイスブックとツイッターの色の指定、フェイスブックは右に１０ｐｘの余白　#3b5998 #55acee */
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
